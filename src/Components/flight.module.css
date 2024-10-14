@@ -1,0 +1,778 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+@font-face {
+    font-family: 'CustomFont'; 
+    src: url('../fonts/Technology-Bold.ttf') format('truetype'); 
+}
+#body{
+    background-color: rgb(210, 210, 210);
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+    color: black;
+}
+#nav{
+    height: 70px; 
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#navdiv1{
+    height: 100%;
+    width:15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#navdiv2{
+    height: 100%;
+    width:25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#navdiv2>a{
+    height: 45px;
+    width: 160px;
+    padding: 12px;
+    text-align: center;
+    color: rgb(9, 255, 0);
+    background-color:rgba(51, 51, 51, 0.589);
+    border: 1px dashed gray;
+    text-decoration: none;
+}
+#navdiv3{
+    height: 100%;
+    width:45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#navdiv3>div{
+    height: 100%;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav>div>div>h1{
+    background-color:rgba(51, 51, 51, 0.589);
+    height: 45px;
+    width: 170px;
+    text-align: center;
+    padding: 10px;
+    border: 1px dashed gray;
+    color: red;
+    font-size:25px;
+}
+#navdiv4{
+    height: 100%;
+    width:15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#navdiv4>a{
+    height: 45px;
+    width: 160px;
+    padding: 12px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    background-color:rgba(51, 51, 51, 0.589);
+    border: 1px dashed gray;
+    text-decoration: none;
+    cursor:pointer ;
+}
+
+/* LOGIN PAGE */
+#login{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#login>div{
+    height: 80%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    border: 1px dashed rgb(93, 93, 93);
+}
+#login>div>form>h1{
+    color: aqua;
+}
+#login>div>form{
+    height: 90%;
+    width: 85%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    color: white;
+    background-color:rgba(51, 51, 51, 0.589);
+    border-radius: 20px;
+    font-size: large;
+}
+#login>div>form>p>a{
+    color: blue;
+}
+#login>div>form>label{
+    width: 100%;
+    margin-top:15px;
+    color: rgb(255, 247, 0);
+}
+#login>div>form>label>input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: rgb(221, 26, 0);
+    background-color: transparent;
+    border-bottom: 1px dashed rgb(93, 93, 93);
+    font-size: large;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+}
+#login>div>form>button{
+    height: 40px;
+    width: 50%;
+    outline: none;
+    border: none;
+    margin-top:8px;
+    color: rgb(0, 255, 21);
+    background-color:black;
+    border: 1px dashed rgb(93, 93, 93);;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+    font-size: larger;
+}
+/* FILTER PAGE */
+#filter{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section1{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+}
+#section1>form{
+    height: 40%;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.911);
+    padding: 20px;
+    border: 2px dashed rgb(93, 93, 93);
+}
+#section1>form>div{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:30px;
+    color: yellow;
+    background-color:rgba(51, 51, 51, 0.589);
+}
+#section1>form>div>input{
+    height: 80%;
+    width: 49%;
+    font-size:large;
+    padding: 2px;
+    border: none;
+    outline: none;
+    color: rgba(255, 0, 0, 0.879);
+    border-bottom:1.5px dashed gray;
+    background-color:transparent;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+    cursor: pointer;
+}
+#section1>form>div>select{
+    height: 80%;
+    width: 23%;
+    font-size:large;
+    padding: 2px;
+    border: none;
+    outline: none;
+    color: rgba(255, 136, 0, 0.879);
+    background-color:transparent;
+    border-bottom:1.5px dashed gray;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+}
+#button{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:rgba(51, 51, 51, 0.589);
+}
+#section1>form>section>button{
+    height: 80%;
+    width: 60%;
+    outline: none;
+    color: rgb(2, 255, 2);
+    background-color: rgba(0, 0, 0, 0.911);
+    border:1.5px dashed rgb(93, 93, 93);
+    border-radius: 10px;
+    font-family: 'CustomFont', sans-serif;
+    font-size:20px;
+    letter-spacing: 5px; 
+    word-spacing: 5px;
+    cursor: pointer;
+}
+#section2{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section2>div{
+    height: 88%;
+    width: 90%;
+    overflow: auto;
+    border: 2px dashed rgb(93, 93, 93);
+    background-color:rgb(32, 32, 32); 
+    padding: 5px;
+}
+#section2>div>div{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.911);
+}
+#section2>div>div>div{
+    height: 100%;
+    width: 50%;
+    color: yellow;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#section2>div>a{
+    text-decoration: none;
+    color: black;
+}
+#flight{
+    height: 60px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.958);
+    margin-bottom: 10px;
+    overflow: auto;
+}
+#flightdetails{
+    height: 40px;
+    width: 100%;
+    background-color:rgba(51, 51, 51, 0.589);
+    display: flex;    
+}
+#span1{
+    height: 100%;
+    width: 50%;
+}
+#span1>div{
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+#span2{
+    height: 100%;
+    width: 16%;
+}
+#span2>div{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 10px;
+}
+#span3{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+}
+
+#flightsheet{
+    height: 20px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#flightsheet>span>strong{
+    color: rgb(0, 255, 0);
+}
+/* BOOKING PAGE */
+#booking{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#booking1{
+    height:20%;
+    width: 90%;
+    margin-top: 30px;
+    background-color: black;
+    font-size: larger;
+    
+}
+#bflight{
+    height:100%;
+    width: 100%;
+}
+#bflightdetails{
+    height:70%;
+    width: 100%;
+    display: flex;
+    background-color:rgb(34, 34, 34);
+}
+#bspan1{
+    height:100%;
+    width: 50%;
+    padding: 10px;
+}
+#bspan1>div{
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+#bspan2{
+    height:100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#bspan3{
+    height:100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#bflightsheet{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    color: white;
+}
+#bflightsheet>span>strong{
+    color: rgb(0, 255, 0);
+}
+#booking2{
+    height:50%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(34, 34, 34);
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+#booking2>div{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    
+}
+#ticket{
+    margin-top:10px;
+    height: 30px;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    color: white;
+    align-items: center;
+    border: 1px dashed gray;
+
+}
+#ticket>div{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+#ticket>div>strong{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+#ticket>strong{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    color: rgb(213, 0, 0);
+}
+
+#bookingform{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color:black;
+    font-size:larger;
+}
+#bookingform>label>input{
+    height: 30px;
+    width: 270px;
+    padding-left: 5px;
+    background-color:transparent;
+    color: white;
+    border: none;
+    border-bottom: 1.5px dashed gray;
+    outline: none;
+    font-size: large;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+}
+#bookingform>label>select{
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1.5px dashed gray;
+    outline: none;
+    font-size: large;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+    color: white;
+
+}
+option{
+    color: white;
+    background-color:black;
+}
+#bookingform>button{
+    height:80%;
+    width: 100px;
+    color:black;
+    border: 1px dashed rgb(93, 92, 92);
+    font-size: larger;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+}
+#booking3{
+    height: 40px;
+    width: 90%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color:black;
+    border: 1px dashed gray;
+    font-size:small;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 3px; 
+    word-spacing: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#booking3>button{
+    height: 40px;
+    width: 15%;
+    background-color:rgb(1, 172, 27);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: larger;
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing:5px; 
+    word-spacing: 5px;
+    border: 1px dashed rgb(0, 0, 0);
+
+}
+/* HISTORY PAGES */
+#history{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#namepallet{
+    width: 90%;
+}
+#history>div>h1{
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    color: rgb(224, 0, 0);
+}
+#ticketblock{
+    height: 90%;
+    width: 90%;
+    overflow: auto;
+}
+#tickethistory{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+#tdiv1{
+    height: 300px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+#tspan11{
+    height: 80px;
+    width: 99%;
+    padding-left: 20px;
+    font-size:30px;
+    color: rgba(0, 162, 8, 0.855);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#tspan11>h6{
+    color: rgb(106, 106, 106);
+}
+#tspan12{
+    height: 180px;
+    width: 99%;
+    background-color:white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#tspan12>div{
+    height:33.3%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left:20px;
+    display: flex;
+}
+#spanname{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+#spandetails{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#spangate{
+    height: 100%;
+    width: 50%;
+    padding-right: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#gateblock{
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#tspan13{
+    height: 40px;
+    width: 99%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    color:rgb(106, 106, 106);
+
+}
+
+#tdiv2{
+    height: 300px;
+    width: 30%;
+    border-left: 2px dashed rgba(255, 254, 254, 0.46);
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+   
+}
+#tspan21{
+    height: 80px;
+    width: 97.7%;
+    padding-left: 20px;
+    font-size:30px;
+    color: rgb(1, 172, 27);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#tspan21>h6{
+    color: rgb(106, 106, 106);
+}
+#tspan22{
+    height: 180px;
+    width: 97.7%;
+    background-color:white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#tspan22>div{
+    height:33.3%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tspan23{
+    height: 40px;
+    width: 97.7%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color:rgb(106, 106, 106);
+
+}
+#qrcode{
+    height:80%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#footer{
+    height:40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+}
+#footerblock{
+    height: 100%;
+    width: 90%;
+    display: flex;
+}
+#footerblock>div{
+    height: 100%;
+    width: 25%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footerblock>div>ul{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+}
+#footerblock>div>h4{
+    color: blue;
+}
+#footerblock>div>ul>li>a{
+    text-decoration: none;
+}
+#div1{
+    background-image: url("../images/image\ \(5\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#footer1>ul>li>a{
+    color: rgb(255, 153, 0);
+    border: 1px dashed rgb(108, 108, 108);
+}
+#footer2>ul>li>a{
+    color: red;
+    border: 1px dashed rgb(108, 108, 108);
+}
+#footer3>ul>li>a{
+    color: rgb(0, 255, 47);
+    border: 1px dashed rgb(108, 108, 108);
+}
